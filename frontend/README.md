@@ -1,95 +1,65 @@
-# 🚀 Full-Stack Next.js + FastAPI Project
+# 🌐 Next.js Frontend — Immersive Full-Stack Web App
 
-This is a full-stack web application built using **Next.js (App Router)** for the frontend and **FastAPI** for the backend. The goal of this project is to explore and integrate a wide range of frontend and backend technologies by building a scalable and performant full-stack solution.
-
----
-
-## 📌 Project Goals
-
-- ✅ Build a highly scalable, full-stack application using modern technologies.
-- ✅ Implement real-world features like authentication, file uploads, API integrations, and more.
-- ✅ Optimize for performance, developer experience, and clean architecture.
-- ✅ Continuously update this README to reflect project progress.
+This is the frontend of a powerful, full-stack web application built using **Next.js (App Router)**. The project integrates cutting-edge frontend technologies like **Redux Toolkit**, **Three.js**, and **GSAP** to deliver a fast, scalable, and immersive user experience.
 
 ---
 
-## 🏗️ Tech Stack Overview
+## 💡 Project Idea
 
-| Category      | Technology    |
-|---------------|---------------|
-| Frontend      | Next.js (App Router), TypeScript, Tailwind CSS |
-| Backend       | FastAPI, Uvicorn |
-| API Comm      | REST (or GraphQL - coming soon) |
-| State Mgmt    | Redux toolkit |
-| Deployment    | Vercel (frontend), Render/Docker (backend) |
-| Database      | PostgreSQL / MongoDB (TBD) |
-| Auth          | Auth.js / JWT |
-| AI/NLP        | HuggingFace Models (TBD) |
+The aim of this project is to build a next-generation, full-stack web application that demonstrates real-world usage of advanced frontend technologies. The app will be interactive, visually engaging, and optimized for performance — suitable for both desktop and mobile environments.
+
+This frontend will communicate with a **FastAPI** backend (handled in a separate repo), serving as the user interface for complex features like dynamic visualizations, authentication, data manipulation, and more.
 
 ---
 
-## ✅ Frontend: Technology TODOs
+## 🛠️ Technologies & Tools (Frontend)
 
-- [x] Next.js App Router
-- [ ] TypeScript Configuration
-- [ ] Tailwind CSS Integration
-- [ ] Global Layout & Theming
-- [ ] Dark Mode Support
-- [ ] Dynamic Routing
-- [ ] API Fetching with SWR or React Query
-- [ ] Auth UI (Login / Register)
-- [ ] Form Handling (React Hook Form)
-- [ ] Image Optimization (`next/image`)
-- [ ] Reusable UI Components (Cards, Modals, etc.)
-- [ ] SEO Setup (`next-seo`)
-- [ ] Dashboard / Admin Panel
-- [ ] Animations (Framer Motion)
-- [ ] File Upload UI
-- [ ] Client-side Validation
+| Category           | Technology             | Purpose                                      |
+|--------------------|------------------------|----------------------------------------------|
+| Framework          | Next.js (App Router)   | React-based SSR/SSG hybrid frontend          |
+| Language           | TypeScript             | Static typing for safer and scalable code    |
+| Styling            | Tailwind CSS           | Utility-first responsive styling             |
+| State Management   | Redux Toolkit          | Scalable, predictable state container        |
+| Animations         | GSAP                   | Smooth and powerful animations               |
+| 3D Rendering       | Three.js               | 3D components and scenes inside the browser  |
+| Routing & Layout   | App Router             | Nested layouts and streaming features        |
+| Forms & Validation | React Hook Form, Zod   | Accessible, type-safe forms                  |
+| Image Handling     | `next/image`           | Optimized image loading and CDN              |
+| API Integration    | Axios / React Query    | Fetch and manage remote data                 |
+| SEO & Meta         | next-seo               | Manage metadata, social sharing              |
+| Component Styling  | Headless UI / ShadCN   | Accessible and themeable components          |
 
+---
 
-## ✅ Backend: Technology TODOs
+## ✅ Feature Checklist (Frontend)
 
-- [ ] FastAPI Project Structure
-- [ ] Uvicorn Setup
-- [ ] CORS Middleware
-- [ ] Database Connection (PostgreSQL / SQLite / MongoDB)
-- [ ] Pydantic Models & Schemas
-- [ ] CRUD Endpoints
-- [ ] JWT Authentication
-- [ ] File Upload Handling
-- [ ] Background Tasks
-- [ ] Pagination & Filtering
-- [ ] Logging & Error Handling
-- [ ] Rate Limiting / Security
-- [ ] Swagger Docs & Redoc
+### 🎨 UI/UX
+- [ ] Responsive design with Tailwind CSS
+- [ ] Dark/light mode toggle
+- [ ] Reusable UI components (modals, buttons, cards)
+- [ ] Accessible navigation with keyboard support
 
-## ✅ API Integration Checklist
-- [ ] Frontend ↔️ FastAPI Connection (CORS config, Axios/SWR setup)
-- [ ] User Login / Registration APIs
-- [ ] Protected Route Handling
-- [ ] Token Refresh Logic
-- [ ] Data Fetching from Backend
-- [ ] Upload File → Backend → Save to Storage
+### State & Data
+- [ ] Global state management with Redux Toolkit
+- [ ] API integration using Axios or React Query
+- [ ] Form validation with React Hook Form + Zod
 
-## ✅ AI/NLP Integration checklist
-- [ ] Setup HuggingFace Inference Endpoint
-- [ ] Add Transformer-based Model to FastAPI
-- [ ] Build Frontend UI for Prediction
-- [ ] Stream Results using SSE or WebSocket
+### Advance Feature 
+- [ ] 3D visualization using Three.js
+- [ ] Interactive animations with GSAP
+- [ ] Dynamic routing and layout management (App Router)
+- [ ] Lazy loading and code splitting
+- [ ] Custom 404 and error boundaries
+
+### Auth & Security
+- [ ] Login & Signup UI
+- [ ] Auth state with Redux Toolkit
+- [ ] Secure token storage (HTTP-only cookies or localStorage fallback)
 
 
-## 🚀 How to Run the Project
-### Frontend
+### 🚀 Getting Started
+Clone the repo
 ```
-cd frontend
 npm install
 npm run dev
-```
-
-### Frontend
-```
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload
 ```
